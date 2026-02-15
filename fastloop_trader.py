@@ -289,7 +289,7 @@ def get_binance_momentum(symbol="BTCUSDT", lookback_minutes=5):
     Returns: {momentum_pct, direction, price_now, price_then, avg_volume, candles}
     """
     url = (
-        f"https://api.binance.com/api/v3/klines"
+        f"https://api1.binance.com/api/v3/klines"
         f"?symbol={symbol}&interval=1m&limit={lookback_minutes}"
     )
     result = _api_request(url)
